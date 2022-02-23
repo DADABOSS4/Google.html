@@ -1,0 +1,142 @@
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulaire test</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+	</head>
+<body>
+    <p><h1>Formulaire de renseignement pour l'anniversaire de Pearl</h1></p>
+    
+    <!--Création de mon formulaire-->
+    <form  action="traitement.html" method="POST" class="form-group" name="formSaisie">
+    <table>
+        <thead>
+            <p>S'il vous plaît remplissez ce formulaire pour nous faciliter l'organisation</p>
+        </thead>
+
+
+        <tbody>
+            <div class="sous-cat" id="nom"> 
+            <tr>
+                    <label for="idPrénom">Prénom : </label>
+                <input type="text" name=Prénom id=idPrénom placeholder="Prénom" required>
+            </tr><br><br>
+            <tr>
+                    <label for="idNom">Nom de famille : </label>
+                <input type="text" name=Nom id=idNom placeholder="Nom de famille" required>
+            </tr><br><br>
+            </div>
+
+
+            <tr><p>Genre : </p></tr>
+            <div class="sous-cat" id="genre"> 
+            <tr>
+                <input type="radio" id="idGenre" name="Genre" class="radio" value="Homme" checked>
+                <label for="idGenre">Homme</label>
+            </tr><br><br>
+            <tr>
+                <input type="radio" id="idGenre" name="Genre" class="radio" value="Femme" checked>
+                <label for="idGenre">Femme</label>
+            </tr><br><br>
+            <tr>
+                <input type="radio" id="idGenre" name="Genre" class="radio" value="Non" checked>
+                <label for="idGenre">Ne se déclare po</label>
+            </tr><br><br>
+            </div>
+
+
+            <tr><p>Adresse : </p></tr>
+            <div class="sous-cat" id="adresse">                
+                <tr>
+                    <label for="idAdresse">Numéro de rue et nom de rue : </label>
+                    <input type="text" name=Adresse id=idAdresse placeholder="Rue et numéro">
+                </tr><br><br>
+                <tr>
+                    <label for="idCodeP">Code postal : </label>
+                    <input type="number" name=CodeP id=idCodeP min="0" >
+                </tr><br><br>
+                <tr>
+                    <label for="idVille">Ville : </label>
+                    <input type="text" name=Ville id=idVille >
+                </tr><br><br>
+
+            </div>
+
+
+            <tr><p>Contact : </p></tr>
+            <div class="sous-cat" id="contact">
+                <tr>
+                    <label for="idNumTel">Numéro de téléphone : </label>
+                    <input type="tel" name=NumTel id=idNumTel placeholder="12-34-56-78-91" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required >
+                </tr><br><br>
+                <tr>
+                    <label for="idAdrMail">Adresse eMail : </label>
+                    <input type="email" name=AdrMail id=idAdrMail placeholder="bob.eponge@truc.bb" required >
+                </tr><br><br>
+            </div>
+
+
+            <tr><p>Logistique : </p></tr>
+            <div class="sous-cat" id="horaire">
+                <tr>
+                    <label for="idTimeIn">Heure d'arrivée : </label>
+                    <input type="time" name=TimeIn id=idTimeIn placeholder="18:00" required >
+                </tr><br><br>
+                <tr>
+                    <label for="idTimeOut">Heure de départ : </label>
+                    <input type="time" name=TimeOut id=idTimeOut placeholder="00:00" >
+                </tr><br><br>
+                <tr>
+                    <label for="idListDormir">Reste dormir : </label>
+                    <select name="dormir" id=idListDormir required >
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </tr><br><br>
+            </div>
+
+
+
+            <tr><p>Repas : </p></tr>
+            <div class="sous-cat" id="repas">
+                <tr>
+                    <label for="idAllergie">Allergies potentielles : </label>
+                    <input type="text" name=Allergie id=idAllergie placeholder="aucune" >
+                </tr><br><br>
+                <tr>
+                    <label for="idApport">Apportez vous à boire / manger : </label>
+                    <input type="text" name=Apport id=idApport placeholder="une mousse plize" >
+                </tr><br><br>
+
+
+            </div>
+
+
+            <tr><p>Autre : </p></tr>
+            <div class="sous-cat" id="misc">
+                <tr>
+                    <label for="idMusique">Nom de votre morceau de musqiue favoris : </label>
+                    <input type="text" name=Musique id=idMusique placeholder="aucune" >
+                </tr><br><br>
+                <tr>
+                    <label for="idComms">Remarques / commentaires : </label>
+                    <input size="30px"type="text" name=Comms id=idComms placeholder="J'aimerais bien sortir avec toi Bob..." >
+                </tr><br><br>
+
+
+            </div>
+                      
+        </tbody>
+    </table>
+        <input type="submit" class="btn-expand btn-primary" value="Valider">
+        <input type="reset" class="btn-expand" value="Effacer le formulaire">
+    </form>
+
+</body>
+</html>
+
+
+<!--<tr> : ligne
+    <td> : cellule -->

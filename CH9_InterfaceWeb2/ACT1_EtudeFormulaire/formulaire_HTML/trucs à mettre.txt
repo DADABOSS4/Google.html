@@ -1,0 +1,22 @@
+    NOM
+    PRENOM 
+
+    GENRE (H/F)                    Genre
+
+    ADRESSE
+    CODE POSTAL                 Adresse
+    VILLE
+
+    TELEPHONE                   Contact
+    EMAIL
+
+    HEURE D’ARRIVEE
+    HEURE DE DEPART             Logistique
+    DORT SUR PLACE (O/N)
+
+    ALLERGIES ALIMENTAIRES      Repas
+    PLAT / BOISSON APPORTES
+
+
+MUSIQUE FAVORITE            Autre
+COMMENTAIRES
